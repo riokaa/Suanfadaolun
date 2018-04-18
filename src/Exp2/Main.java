@@ -15,7 +15,8 @@ public class Main {
 		SecondGraph g = new SecondGraph(100);	//new 100 points
 		g.randomNewEdge(500);					//new 500 edges
 		g.print();								//print chain
-		
+		g.destroyAllLoop();
+		g.print();
 	}
 
 }
