@@ -25,6 +25,7 @@ public class SecondGraph extends Graph{
 		//DFS
 		while(!stack.empty()){
 			int current = stack.pop();
+			//this.printStack(stack);
 			if(color[current] == PointColor.BLACK)
 				continue;	//if be checked then continue
 			for(int i=1; i<this.points[current].size(); i++){
@@ -33,6 +34,7 @@ public class SecondGraph extends Graph{
 					this.deleteEdge(current, pointNum);
 				}else if(color[points[current].get(i)] != PointColor.BLACK){
 					stack.push(points[current].get(i));
+					//this.printStack(stack);
 					color[points[current].get(i)] = PointColor.GRAY;
 				}
 			}
@@ -45,5 +47,10 @@ public class SecondGraph extends Graph{
 		for(int i=0; i<this.points.length; i++){
 			this.destroyLoopFromPoint(i);
 		}
+	}
+	
+	/* out print Stack */
+	public void printStack(Stack<Integer> s){
+		System.out.println(s.toString());
 	}
 }
