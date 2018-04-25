@@ -28,8 +28,8 @@ public class Graph {
 		while(true) {
 			//选择两个不同的点u,v
 			while(true) {
-				u = (int)(Math.random()*100);
-				v = (int)(Math.random()*100);
+				u = (int)(Math.random()*this.points.length);
+				v = (int)(Math.random()*this.points.length);
 				if(u!=v)
 					break;
 			}

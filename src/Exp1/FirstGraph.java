@@ -23,7 +23,7 @@ public class FirstGraph extends Graph{
 		bfs.add(n);
 		while(bfs.size()>0) {
 			int bfsPoint = bfs.getFirst();
-			for(int i=0; i<this.points[bfsPoint].size(); i++) {
+			for(int i=1; i<this.points[bfsPoint].size(); i++) {
 				if(distance[bfsPoint]+1 < distance[this.points[bfsPoint].get(i)]) {
 					distance[this.points[bfsPoint].get(i)] = distance[bfsPoint]+1;
 					bfs.add(this.points[bfsPoint].get(i));
