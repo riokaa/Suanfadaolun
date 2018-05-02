@@ -86,4 +86,17 @@ public class Graph {
 			System.out.println("Failed to delete Edge (" + u + "," + v + ")");
 		}
 	}
+
+	/* return a reverse graph */
+	public Graph getReverseGraph() {
+		Graph res = new Graph(this.points.length);
+		for(int i=0; i<this.points.length; i++) {
+			int u = this.points[i].get(0);
+			for(int j=1; j<this.points[i].size(); j++) {
+				int v = this.points[i].get(j);
+				res.addEdge(v, u);
+			}
+		}
+		return res;
+	}
 }
