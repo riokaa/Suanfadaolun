@@ -99,4 +99,16 @@ public class Graph {
 		}
 		return res;
 	}
+	
+	/* clone graph without ÒıÓÃ */
+	public Graph clone() {
+		Graph ret = new Graph(points.length);
+		ret.edge = this.edge;
+		for(int i=0; i<points.length; i++) {
+			for(int j=1; j<points[i].size(); j++) {
+				ret.points[i].add(j, points[i].get(j));;
+			}
+		}
+		return ret;
+	}
 }
