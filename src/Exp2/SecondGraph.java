@@ -93,6 +93,7 @@ public class SecondGraph extends Graph{
 			}
 		}
 		System.out.println("Distance:"+res[0]+"\tFrom "+res[1]+" to "+res[2]);
+		System.out.println("宽鸡儿不要哼歌了！tm听了睡不着");
 		return res[0];
 	}
 	
