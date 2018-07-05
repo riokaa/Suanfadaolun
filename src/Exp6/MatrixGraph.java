@@ -7,8 +7,8 @@ import java.util.Random;
 public class MatrixGraph {
 	public int[][] matrix;
 	public int n;	//points amount
-	int edge;	//edge amount
-	boolean isDigraph;
+	protected int edge;	//edge amount
+	protected boolean isDigraph;
 	
 	public MatrixGraph(int numOfPoints, boolean isDigraph) {
 		this.n = numOfPoints;
@@ -21,6 +21,7 @@ public class MatrixGraph {
 	}
 	
 	public void addEdge(int u, int v, int len) {
+//		System.out.println("AddEdge("+u+", "+v+", "+len+")");
 		if(isDigraph) {
 			assert(matrix[u][v] == 0);
 			matrix[u][v] = len;

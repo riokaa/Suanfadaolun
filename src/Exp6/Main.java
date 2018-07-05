@@ -25,7 +25,7 @@ public class Main {
 			System.out.println("******局部搜索操作******");
 			g.localSearch();
 			System.out.println("******最终生成的MST******");
-			g.printSelectedTree();
+			g.printSelectTree();
 			// 还差一个验证算法
 
 			// prim

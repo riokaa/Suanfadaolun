@@ -17,8 +17,8 @@ package Exp5;
 public class Main {
 
 	public static void main(String[] args) {
-		FifthGraph g = new FifthGraph(6);	//new 100 points
-		g.randomNewEdge(5);					//new 300 edges
+		FifthGraph g = new FifthGraph(100);	//new 100 points
+		g.randomNewEdge(300);					//new 300 edges
 		g.print();								//print chain
 		g.printGedian();
 	}

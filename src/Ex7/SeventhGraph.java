@@ -9,6 +9,7 @@ public class SeventhGraph extends MatrixGraph{
 	public SeventhGraph(int numOfPoints) {
 		super(numOfPoints, true);
 		// TODO 自动生成的构造函数存根
+		this.print();
 	}
 
 	public SeventhGraph(int numOfPoints, int numOfEdges, int minLen, int maxLen) {
@@ -16,6 +17,7 @@ public class SeventhGraph extends MatrixGraph{
 		// TODO 自动生成的构造函数存根
 		for(int i=0; i<numOfEdges; i++)
 			this.addOneRandomEdge(minLen, maxLen);
+		this.print();
 	}
 	
 	public void bellman_ford(int startPoint) {

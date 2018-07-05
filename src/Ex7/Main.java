@@ -9,7 +9,7 @@ package Ex7;
 public class Main {
 
 	public static void main(String[] args) {
-		SeventhGraph g = new SeventhGraph(100, 500, -5, 5);
+		SeventhGraph g = new SeventhGraph(20, 40, -5, 5);
 		g.bellman_ford(0);
 	}
 
