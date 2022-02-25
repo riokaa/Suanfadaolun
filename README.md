@@ -1,9 +1,9 @@
 # README
 算法导论实验程序(1804)，包含8个算法实验。
 
-|Aothor|爱吃大板|
+<!-- |Aothor|爱吃大板|
 |---|---|
-|Email|rayiooo@foxmail.com|
+|Email|rayiooo@foxmail.com| -->
 
 ## Exercise 1
 
